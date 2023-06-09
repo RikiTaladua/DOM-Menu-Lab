@@ -85,3 +85,7 @@ topMenuEl.addEventListener('click', function(evt) {
       subMenuEl.style.top = '0';
       return;
     }
+    // 5.4
+  topMenuLinks.forEach(function(link) {
+    link.classList.remove('active');
+  });
