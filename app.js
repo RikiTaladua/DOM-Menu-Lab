@@ -128,3 +128,6 @@ subMenuEl.addEventListener('click', function(evt) {
     const link = evt.target;
     if (link.tagName !== 'A') return;
     console.log(link.textContent);
+        // 6.1
+  showingSubMenu = false;
+  subMenuEl.style.top = '0';
