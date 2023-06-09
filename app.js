@@ -121,3 +121,10 @@ function buildSubMenu(subLinks) {
       subMenuEl.appendChild(linkEl);
     });
   }
+
+  //  6.0
+subMenuEl.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    const link = evt.target;
+    if (link.tagName !== 'A') return;
+    console.log(link.textContent);
