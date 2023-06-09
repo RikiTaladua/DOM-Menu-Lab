@@ -62,6 +62,7 @@ subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)';
 // 4.3
 subMenuEl.classList.add('flex-around');
 
-
+// 4.4
+subMenuEl.style.position = 'absolute';
 
   
