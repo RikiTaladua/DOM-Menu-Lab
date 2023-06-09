@@ -16,3 +16,6 @@ const topMenuEl = document.getElementById('top-menu');
 // 2.1
 topMenuEl.style.height = '100%'
 
+// 2.2
+topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
+
