@@ -78,6 +78,7 @@ topMenuEl.addEventListener('click', function(evt) {
     const link = evt.target;
     if (link.tagName !== 'A') return;
     console.log(link.textContent);
+
     // 5.3
     if (link.classList.contains('active')) {
       link.classList.remove('active');
@@ -85,9 +86,17 @@ topMenuEl.addEventListener('click', function(evt) {
       subMenuEl.style.top = '0';
       return;
     }
+    
     // 5.4
   topMenuLinks.forEach(function(link) {
     link.classList.remove('active');
   });
+
   // 5.5
   link.classList.add('active');
+
+  // 5.6
+  const linkData = menuLinks.find(function(linkObj) {
+    return linkObj.text === link.textContent;
+  });
+  showingSubMenu = 'subLinks' in linkData;
