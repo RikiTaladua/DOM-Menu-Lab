@@ -135,3 +135,6 @@ subMenuEl.addEventListener('click', function(evt) {
   topMenuLinks.forEach(function(link) {
     link.classList.remove('active');
   });
+        // 6.3
+  mainEl.innerHTML = `<h1>${link.textContent}</h1>`;
+});
