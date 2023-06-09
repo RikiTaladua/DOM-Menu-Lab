@@ -53,6 +53,10 @@ menuLinks.forEach(function(link) {
   // 4.0
 const subMenuEl = document.getElementById('sub-menu');
 
+// 4.1
+subMenuEl.style.height = '100%';
+
+
 
 
   
