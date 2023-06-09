@@ -68,3 +68,6 @@ subMenuEl.style.position = 'absolute';
 // 4.5
 subMenuEl.style.top = '0'; 
 
+// 5.1
+const topMenuLinks = document.querySelectorAll('#top-menu a');
+let showingSubMenu = false;
