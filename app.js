@@ -101,7 +101,7 @@ topMenuEl.addEventListener('click', function(evt) {
   });
   showingSubMenu = 'subLinks' in linkData;
 
-  // Task 5.7
+  // 5.7
   if (showingSubMenu) {
     buildSubMenu(linkData.subLinks);
     subMenuEl.style.top = '100%';
@@ -110,3 +110,14 @@ topMenuEl.addEventListener('click', function(evt) {
     mainEl.innerHTML = '<h1>about</h1>';
   }
 });
+
+// 5.8
+function buildSubMenu(subLinks) {
+    subMenuEl.innerHTML = '';
+    subLinks.forEach(function(link) {
+      const linkEl = document.createElement('a');
+      linkEl.setAttribute('href', link.href);
+      linkEl.textContent = link.text;
+      subMenuEl.appendChild(linkEl);
+    });
+  }
