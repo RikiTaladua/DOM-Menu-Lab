@@ -86,7 +86,7 @@ topMenuEl.addEventListener('click', function(evt) {
       subMenuEl.style.top = '0';
       return;
     }
-    
+
     // 5.4
   topMenuLinks.forEach(function(link) {
     link.classList.remove('active');
@@ -100,3 +100,13 @@ topMenuEl.addEventListener('click', function(evt) {
     return linkObj.text === link.textContent;
   });
   showingSubMenu = 'subLinks' in linkData;
+
+  // Task 5.7
+  if (showingSubMenu) {
+    buildSubMenu(linkData.subLinks);
+    subMenuEl.style.top = '100%';
+  } else {
+    subMenuEl.style.top = '0';
+    mainEl.innerHTML = '<h1>about</h1>';
+  }
+});
