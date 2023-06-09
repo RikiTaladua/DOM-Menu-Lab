@@ -41,3 +41,12 @@ const menuLinks = [
       {text: 'sign out', href: '/account/signout'},
     ]},
   ];
+
+  // 3.1
+menuLinks.forEach(function(link) {
+    const linkEl = document.createElement('a');
+    linkEl.setAttribute('href', link.href);
+    linkEl.textContent = link.text;
+    topMenuEl.appendChild(linkEl);
+  });
+  
