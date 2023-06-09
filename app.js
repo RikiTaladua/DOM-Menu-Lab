@@ -131,3 +131,7 @@ subMenuEl.addEventListener('click', function(evt) {
         // 6.1
   showingSubMenu = false;
   subMenuEl.style.top = '0';
+        // 6.2
+  topMenuLinks.forEach(function(link) {
+    link.classList.remove('active');
+  });
