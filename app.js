@@ -13,3 +13,6 @@ mainEl.classList.add('flex-ctr');
 // 2.0
 const topMenuEl = document.getElementById('top-menu');
 
+// 2.1
+topMenuEl.style.height = '100%'
+
