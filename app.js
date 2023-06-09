@@ -9,3 +9,7 @@ mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
 
 // 1.3
 mainEl.classList.add('flex-ctr');
+
+// 2.0
+const topMenuEl = document.getElementById('top-menu');
+
