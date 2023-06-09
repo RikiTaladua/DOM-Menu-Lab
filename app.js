@@ -7,3 +7,5 @@ mainEl.style.backgroundColor = 'var(--main-bg)';
 // 1.2
 mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
 
+// 1.3
+mainEl.classList.add('flex-ctr');
