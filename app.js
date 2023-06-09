@@ -22,8 +22,8 @@ topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 // 2.3
 topMenuEl.classList.add('flex-around');
 
-// Task 3.0
-// Menu data structure (Task 5.0)
+// 3.0
+// Menu data structure (5.0)
 const menuLinks = [
     {text: 'about', href: '/about'},
     {text: 'catalog', href: '#', subLinks: [
