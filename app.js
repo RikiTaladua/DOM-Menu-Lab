@@ -49,4 +49,10 @@ menuLinks.forEach(function(link) {
     linkEl.textContent = link.text;
     topMenuEl.appendChild(linkEl);
   });
+
+  // 4.0
+const subMenuEl = document.getElementById('sub-menu');
+
+
+
   
